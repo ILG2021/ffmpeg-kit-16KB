@@ -1,3 +1,17 @@
+# How to build
+1. Replace your home path in config_env.sh
+
+2. Download ndk 25 that support 16kb and put it in the path as in config_env.sh
+   https://ci.android.com/builds/submitted/12161346/linux/latest/android-ndk-12161346-linux-x86_64.zip
+   
+2. Download Android Studio and install SDK 35 and jdk 17, put them in the paths as in config_env.sh
+
+3. Compile with:
+`
+source ./config_env.sh
+./android.sh --api-level=21 --disable-arm-v7a-neon --disable-x86 --enable-lame
+`
+
 # 16KB Page Size Update
 This fork only aims to make ffmpeg-kit compatible with new android versions (API 35) which request all binaries to be rebuilt.
 Google request developers to build new with new r27 and r28 ndk but ffmpeg-kit has its own NDK compatibility table which supports only upto r25.</p>

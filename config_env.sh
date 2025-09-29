@@ -1,0 +1,12 @@
+export ANDROID_SDK_ROOT="/home/asus/Android/Sdk"
+export PATH="$PATH:$ANDROID_SDK_ROOT/tools"
+export PATH="$PATH:$ANDROID_SDK_ROOT/platform-tools"
+export PATH="$PATH:$ANDROID_SDK_ROOT/emulator"
+export ANDROID_NDK_ROOT="/home/asus/Android/android-ndk-12161346-linux-x86_64/android-ndk-r25d-canary"
+export JAVA_HOME="/home/asus/.jdks/jbr-17.0.14"
+export PATH="$JAVA_HOME/bin:$PATH"
+echo "ANDROID_SDK_ROOT: $ANDROID_SDK_ROOT"
+echo "ANDROID_NDK_ROOT: $ANDROID_NDK_ROOT"
+echo "JAVA_HOME: $JAVA_HOME"
+echo "PATH: $PATH"
+java -version
